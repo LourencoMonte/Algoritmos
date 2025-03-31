@@ -1,3 +1,13 @@
+puts 'Digite um número'
+number = gets.chomp.to_i
+
+if number.odd?
+      puts "O número #{number} é impar"
+else 
+      puts "O número #{number} é par"
+end
+
+=begin
 Algoritmo "Par ou Impar"
 //Neste código o algoritmo vai pedir que você digite um número,
 //e dirá se é impar ou par.
@@ -19,3 +29,4 @@ Inicio
 
 
 Fimalgoritmo
+=end
