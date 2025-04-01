@@ -1,3 +1,27 @@
+puts 'Digite 1 para receber números impares'
+puts 'Digite 2 para receber números pares'
+choice = gets.chomp.to_i
+
+puts 'Digite um número'
+number = gets.chomp.to_i
+
+if choice == 1
+   puts "Os números ímpares de 1 a #{number} são: "
+   (1..number).each do |i|
+      puts i if i.odd? 
+     end
+elsif choice == 2
+   puts "Os números pares de 0 a #{number} são: "
+   (0..number).each do |i| 
+      puts i if i.even?  
+   end
+else
+   puts "Número inválido"
+end
+
+
+
+=begin
 Algoritmo "Numeros Impares ou Pares"
 
 //Este algoritmo vai informar ao usuario todos os números
@@ -30,3 +54,4 @@ Inicio
          FimPara
        FimSe
 Fimalgoritmo
+=end
